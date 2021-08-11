@@ -1,6 +1,6 @@
-# First Project
+# My Portfolio
 
-> To Have hands on experience on dev tools and github flow.
+> This is a web portfolio of my work with all the communication details. Enjoy watching.
 
 ![screenshot](./app_screenshot.PNG)
 

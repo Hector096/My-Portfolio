@@ -1,6 +1,6 @@
-# First Project
+# My Portfolio
 
-> To Have hands on experience on dev tools and github flow.
+> This is a web portfolio of my work with all the communication details. Enjoy watching.
 
 ![screenshot](./app_screenshot.PNG)
 
@@ -23,10 +23,8 @@ You have a basic understanding of HTML,CSS,Git and Github.
 
 ### Setup
 
-1. Clone the repository with *git clone https://github.com/Hector096/FirstRepo.git* 
+1. Clone the repository with *git clone https://github.com/Hector096/My-Portfolio.git* 
 2. Run *index.html* in for browser.
-
-
 
 
 ## Authors

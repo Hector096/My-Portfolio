@@ -16,19 +16,19 @@ header {
 h1 {
   display: flex;
   text-align: left;
-  font-family: "Poppins";
+  font-family: Poppins;
   font-weight: bold;
   margin-top: 60px;
   margin-left: 30px;
   margin-right: 30px;
   line-height: 52px;
   font-size: xx-large;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 p {
   display: flex;
-  font-family: "Poppins";
+  font-family: Poppins;
   text-align: left;
   margin-left: 30px;
   margin-right: 30px;
@@ -39,19 +39,19 @@ p {
 h2 {
   display: flex;
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: Poppins;
   text-align: left;
   margin-left: 30px;
   margin-right: 30px;
   font-size: x-large;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .logo {
-  color: #7F8CFF;
+  color: #7f8cff;
   font-size: x-large;
-  font-family: "Poppins";
+  font-family: Poppins;
   font-weight: 600;
 }
 

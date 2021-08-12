@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+section {
+  background-image: url('images//background1.png');
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h1 {
+  display: flex;
+  text-align: left;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 52px;
+  font-size: xx-large;
+  color: #172b4d;
+}
+
+p {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: large;
+  color: #344563;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h2 {
+  display: flex;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: x-large;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.logo {
+  color: #7f8cff;
+  font-size: x-large;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu {
+  color: #7f8cff;
+  padding-top: 10px;
+}
+
+.social {
+  margin-left: 20px;
+  display: inline;
+  justify-content: space-between;
+}
+
+.social1 {
+  display: inline;
+  justify-content: space-between;
+  margin-left: 30px;
+}

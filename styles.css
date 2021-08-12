@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-body {
+section {
   background-image: url('images//background.png');
 }
 
@@ -35,6 +35,13 @@ p {
   color: #344563;
 }
 
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
 h2 {
   display: flex;
   font-weight: 500;
@@ -52,6 +59,7 @@ h2 {
   font-size: x-large;
   font-family: Poppins, sans-serif;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .menu {

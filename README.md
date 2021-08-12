@@ -2,7 +2,7 @@
 
 > This is a web portfolio of my work with all the communication details. Enjoy watching.
 
-![screenshot](./app_screenshot.PNG)
+![screenshot](./images/screenshot.PNG)
 
 Additional description about the project and its features.
 

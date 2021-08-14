@@ -98,7 +98,8 @@ h2 {
 }
 
 .work-item {
-  place-self: center;
+  display: flex;
+  justify-content: start;
   width: 90vw;
   border: 2px solid rgb(197, 195, 195);
   border-radius: 20px;
@@ -218,6 +219,9 @@ h2 {
 }
 
 .about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   background-color: white;
   border: 1px solid white;
   border-top-right-radius: 110px;

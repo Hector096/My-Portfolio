@@ -3,6 +3,8 @@
 > This is a web portfolio of my work with all the communication details. Enjoy watching.
 
 ![screenshot](./images/screenshot.PNG)
+![screenshot](./images/Work.PNG)
+![screenshot](./images/about.PNG)
 
 Additional description about the project and its features.
 

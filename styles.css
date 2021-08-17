@@ -249,3 +249,61 @@ h2 {
   height: 15px;
   width: 15px;
 }
+
+.contact-section {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: start;
+  background-image: url(images/contact-background.png);
+  background-size: contain;
+  border: 1px solid white;
+  border-top-left-radius: 110px;
+}
+
+#contact-card-title {
+  color: #fcfcfc;
+  justify-content: center;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 40px;
+  font-family: Poppins, sans-serif;
+  margin-top: 150px;
+}
+
+#contact-paragraph {
+  font-family: Poppins, sans-serif;
+  font-size: large;
+  color: #fcfcfc;
+  justify-content: center;
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  gap: 20px;
+}
+
+.form-field {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: Poppins, sans-serif;
+}
+
+#contact-btn {
+  justify-content: start;
+  width: 120px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: Poppins, sans-serif;
+  color: #4472e7;
+}
+
+.contact-message {
+  height: 100px;
+}

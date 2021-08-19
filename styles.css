@@ -457,7 +457,7 @@ h2 {
 @media (min-width: 1000px) {
   .work-item {
     height: min-content;
-    width: 80vw;
+    width: 70vw;
   }
 
   .intro-box {

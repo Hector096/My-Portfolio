@@ -356,7 +356,7 @@ h2 {
     visibility: visible;
     display: flex;
   }
-  
+
   .menu1 ul {
     visibility: visible;
     display: flex;
@@ -368,13 +368,13 @@ h2 {
     text-decoration: none;
   }
 
-  .menu1 li a{
+  .menu1 li a {
     text-decoration: none;
     color: #344563;
     font-size: 1.2em;
   }
 
-  .menu1 li a:hover{
+  .menu1 li a:hover {
     color: #4472e7;
   }
 
@@ -386,7 +386,7 @@ h2 {
     background-image: url("images/contact-desktop-background.png");
     background-size: cover;
   }
-  
+
 }
 
 @media (min-width: 750px) {
@@ -397,32 +397,24 @@ h2 {
   
   .language {
     flex-direction: column;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 10px;
     width: 8em;
   }
-   
+
   #lang-list {
     display: flex;
-  } 
-   
+  }
+
   .language-text {
     text-align: center;
-    padding-left: 0px;
   }
 
   .about {
     width: 50%;
     padding-top: 50px;
-  }
-
-  .card-image {
-    margin-top: 0px;
   }
 
   .about-section {
@@ -472,11 +464,11 @@ h2 {
   .work-item {
     height: 60vh;
     width: 80vw;
-   }
+  }
    
-   .work-box {
+  .work-box {
      flex-direction: row;
-   }
+  }
 
   .box1 {
     flex-direction: row-reverse;
@@ -493,5 +485,5 @@ h2 {
   #contact-btn {
     place-self: center;
   }
-  
+
 }

@@ -455,7 +455,7 @@ h2 {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .work-item {
     height: 60vh;
     width: 80vw;

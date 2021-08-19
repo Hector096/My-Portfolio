@@ -136,8 +136,7 @@ h2 {
 }
 
 .card-image {
-  display: flex;
-  justify-content: center;
+  width: 100;
 }
 
 .card-title {
@@ -457,7 +456,7 @@ h2 {
 
 @media (min-width: 1000px) {
   .work-item {
-    height: 60vh;
+    height: min-content;
     width: 80vw;
   }
 
@@ -482,8 +481,12 @@ h2 {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .work-item {
     justify-content: center;
+  }
+
+  .work-button {
+    margin-bottom: 50px;
   }
 }

@@ -6,10 +6,24 @@
 }
 
 .intro-section {
-  background-image: url('images//background1.png');
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/background1.png');
+  background-size: cover;
   height: 70vh;
-  border-bottom-right-radius: 110px;
+  border-bottom-left-radius: 110px;
   border: 1px solid white;
+}
+
+.intro-box {
+  width: 90vw;
+}
+
+h1 span {
+  display: block;
 }
 
 header {
@@ -21,11 +35,9 @@ header {
 }
 
 h1 {
-  display: flex;
   text-align: left;
   font-family: Poppins, sans-serif;
   font-weight: bold;
-  margin-top: 60px;
   margin-left: 30px;
   margin-right: 30px;
   line-height: 52px;
@@ -77,6 +89,10 @@ h2 {
   padding-top: 10px;
 }
 
+.menu1 {
+  display: none;
+}
+
 .social {
   margin-left: 20px;
   display: inline;
@@ -111,12 +127,16 @@ h2 {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+}
+
+.work-snapshot {
+  height: 100%;
+  width: 100%;
 }
 
 .card-image {
-  place-self: center;
-  margin-top: 30px;
+  width: 100%;
 }
 
 .card-title {
@@ -179,6 +199,11 @@ h2 {
   font-weight: bold;
 }
 
+.project-button:hover {
+  color: white;
+  background-color: #4472e7;
+}
+
 .work-text {
   font-family: Poppins, sans-serif;
   color: #7f8081;
@@ -225,6 +250,7 @@ h2 {
   background-color: white;
   border: 1px solid white;
   border-top-right-radius: 110px;
+  padding-bottom: 50px;
 }
 
 .language {
@@ -250,9 +276,12 @@ h2 {
   width: 15px;
 }
 
+.about {
+  padding-top: 100px;
+}
+
 .contact-section {
   display: flex;
-  margin-top: 100px;
   flex-direction: column;
   justify-content: start;
   background-image: url(images/contact-background.png);
@@ -269,6 +298,7 @@ h2 {
   font-size: 40px;
   font-family: Poppins, sans-serif;
   margin-top: 150px;
+  text-align: center;
 }
 
 #contact-paragraph {
@@ -304,6 +334,159 @@ h2 {
   color: #4472e7;
 }
 
+#contact-btn:hover {
+  color: white;
+  background-color: #4472e7;
+  border: 1px solid #4472e7;
+}
+
 .contact-message {
   height: 100px;
+}
+
+@media (min-width: 420px) {
+  .intro-section {
+    background-image: url('images/main-desktop-background.png');
+    height: 80vh;
+  }
+
+  .menu1 {
+    visibility: visible;
+    display: flex;
+  }
+
+  .menu1 ul {
+    display: flex;
+  }
+
+  .menu1 li {
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .menu1 li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 1.2em;
+  }
+
+  .menu1 li a:hover {
+    color: #4472e7;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .contact-section {
+    background-image: url("images/contact-desktop-background.png");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 750px) {
+  .languages-box2 {
+    padding-top: 40px;
+    width: 50%;
+  }
+
+  .language {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    width: 8em;
+  }
+
+  #lang-list {
+    display: flex;
+  }
+
+  .language-text {
+    text-align: center;
+  }
+
+  .about {
+    width: 50%;
+    padding-top: 50px;
+  }
+
+  .about-section {
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 50px;
+  }
+
+  header {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .contact-section {
+    width: 100vw;
+    background-image: url("images/contact-desktop-background.png");
+    background-size: cover;
+  }
+
+  .contact {
+    width: 50vw;
+    place-self: center;
+  }
+
+  #contact-card-title {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 50vw;
+    place-self: center;
+    margin-bottom: 100px;
+  }
+
+  #contact-btn {
+    place-self: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .work-item {
+    height: min-content;
+    width: 70vw;
+  }
+
+  .intro-box {
+    width: 70vw;
+  }
+
+  .work-box {
+    flex-direction: row;
+  }
+
+  .box1 {
+    flex-direction: row-reverse;
+  }
+
+  .text-span {
+    display: inline;
+  }
+
+  #contact-btn {
+    place-self: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .work-item {
+    justify-content: center;
+  }
+
+  .work-button {
+    margin-bottom: 50px;
+  }
 }

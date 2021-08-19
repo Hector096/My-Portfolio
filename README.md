@@ -2,6 +2,14 @@
 
 > This is a web portfolio of my work with all the communication details. Enjoy watching.
 
+
+## Desktop Version
+![screenshot](./images/desktop-screenshot.PNG)
+![screenshot](./images/second-desktop.PNG)
+![screenshot](./images/third-desktop.PNG)
+![screenshot](./images/forth-desktop.PNG)
+
+## Mobile Version
 ![screenshot](./images/intro.PNG)
 ![screenshot](./images/Work.PNG)
 ![screenshot](./images/about.PNG)

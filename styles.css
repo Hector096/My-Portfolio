@@ -393,7 +393,7 @@ h2 {
     padding-top: 40px;
     width: 50%;
   }
-  
+
   .language {
     flex-direction: column;
     align-items: center;
@@ -458,16 +458,15 @@ h2 {
 }
 
 @media (min-width: 900px) {
-
   .work-item {
     height: 60vh;
     width: 80vw;
   }
-   
+  
   .work-box {
     flex-direction: row;
-    }
-    
+  }
+  
   .box1 {
     flex-direction: row-reverse;
   }

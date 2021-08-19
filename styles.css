@@ -358,7 +358,6 @@ h2 {
   }
   
   .menu1 ul {
-    visibility: visible;
     display: flex;
   }
 
@@ -463,6 +462,10 @@ h2 {
     width: 80vw;
   }
   
+  .intro-box {
+    width: 70vw;
+  }
+
   .work-box {
     flex-direction: row;
   }
@@ -470,10 +473,7 @@ h2 {
   .box1 {
     flex-direction: row-reverse;
   }
-  .intro-box {
-    width: 70vw;
-  }
-
+  
   .text-span {
     display: inline;
   }

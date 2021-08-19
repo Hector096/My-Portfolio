@@ -127,7 +127,7 @@ h2 {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 
 .work-snapshot {
@@ -136,7 +136,7 @@ h2 {
 }
 
 .card-image {
-  width: 100;
+  width: 100%;
 }
 
 .card-title {

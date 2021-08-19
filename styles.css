@@ -481,3 +481,9 @@ h2 {
     place-self: center;
   }
 }
+
+@media (min-width: 1600px) {
+  .work-item {
+    justify-content: center;
+  }
+}

@@ -356,7 +356,7 @@ h2 {
     visibility: visible;
     display: flex;
   }
-  
+
   .menu1 ul {
     display: flex;
   }
@@ -435,7 +435,7 @@ h2 {
     background-image: url("images/contact-desktop-background.png");
     background-size: cover;
   }
-  
+
   .contact {
     width: 50vw;
     place-self: center;
@@ -461,7 +461,7 @@ h2 {
     height: 60vh;
     width: 80vw;
   }
-  
+
   .intro-box {
     width: 70vw;
   }
@@ -469,11 +469,11 @@ h2 {
   .work-box {
     flex-direction: row;
   }
-  
+
   .box1 {
     flex-direction: row-reverse;
   }
-  
+
   .text-span {
     display: inline;
   }

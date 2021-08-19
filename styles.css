@@ -356,6 +356,11 @@ h2 {
     visibility: visible;
     display: flex;
   }
+  
+  .menu1 ul {
+    visibility: visible;
+    display: flex;
+  }
 
   .menu1 li {
     list-style: none;
@@ -481,7 +486,7 @@ h2 {
     width: 70vw;
   }
 
-  #text-span {
+  .text-span {
     display: inline;
   }
 

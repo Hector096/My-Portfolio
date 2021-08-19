@@ -386,7 +386,6 @@ h2 {
     background-image: url("images/contact-desktop-background.png");
     background-size: cover;
   }
-
 }
 
 @media (min-width: 750px) {
@@ -456,7 +455,6 @@ h2 {
   #contact-btn {
     place-self: center;
   }
-
 }
 
 @media (min-width: 900px) {
@@ -467,9 +465,9 @@ h2 {
   }
    
   .work-box {
-     flex-direction: row;
-  }
-
+    flex-direction: row;
+    }
+    
   .box1 {
     flex-direction: row-reverse;
   }
@@ -485,5 +483,4 @@ h2 {
   #contact-btn {
     place-self: center;
   }
-
 }

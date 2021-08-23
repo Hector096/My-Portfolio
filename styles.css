@@ -63,7 +63,7 @@ p {
   display: inline-block;
   margin-left: 30px;
   margin-top: 20px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .social-list:hover {

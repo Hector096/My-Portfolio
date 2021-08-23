@@ -17,6 +17,11 @@
 
 Additional description about the project and its features.
 
+
+## LIVE DEMO
+
+ [Live Demo](https://github.com/Hector096)
+
 ## Built With
 
 - HTML & CSS
@@ -34,7 +39,7 @@ You have a basic understanding of HTML,CSS,Git and Github.
 
 ### Setup
 
-1. Clone the repository with *git clone https://github.com/Hector096/My-Portfolio.git* 
+1. Clone the repository with *git clone: [Repository](https://github.com/Hector096/My-Portfolio.git*)  
 2. Run *index.html* in for browser.
 
 

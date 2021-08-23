@@ -20,7 +20,7 @@ Additional description about the project and its features.
 
 ## LIVE DEMO
 
- [Live Demo](https://github.com/Hector096)
+ [Live Demo](https://hector096.github.io/My-Portfolio/)
 
 ## Built With
 

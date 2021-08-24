@@ -80,11 +80,11 @@ h2 {
   margin-top: 20px;
   font-size: large;
   line-height: 24px;
-  color: #7f8cff;
+  color: #384af5;
 }
 
 .logo {
-  color: #7f8cff;
+  color: #384af5;
   font-size: x-large;
   font-family: Poppins, sans-serif;
   font-weight: 600;
@@ -94,7 +94,7 @@ h2 {
 }
 
 .menu {
-  color: #7f8cff;
+  color: #384af5;
   padding-top: 10px;
 }
 
@@ -194,7 +194,7 @@ h2 {
 .chips {
   background-color: #ebebff;
   padding: 10px;
-  color: #4472e7;
+  color: #384af5;
   border-radius: 10px;
   font-weight: bold;
   font-family: Poppins, sans-serif;
@@ -202,10 +202,17 @@ h2 {
   margin-right: 20px;
 }
 
+#projects h2 {
+  color: #384af5;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  font-size: 50px;
+}
+
 .project-button {
-  border: 2px solid #4472e7;
+  border: 2px solid #384af5;
   padding: 8px;
-  color: #4472e7;
+  color: #384af5;
   text-decoration: none;
   border-radius: 8px;
   font-size: large;
@@ -216,19 +223,19 @@ h2 {
 
 .project-button:hover {
   color: white;
-  background-color: #4472e7;
+  background-color: #384af5;
 }
 
 .work-text {
   font-family: Poppins, sans-serif;
-  color: #7f8081;
+  color: #344563;
   font-weight: bold;
 }
 
 .canopy {
   font-family: Poppins, sans-serif;
   font-weight: bold;
-  color: #344563;
+  color: black;
 }
 
 .vector-img {
@@ -306,7 +313,7 @@ h2 {
 }
 
 #contact-card-title {
-  color: #fcfcfc;
+  color: black;
   justify-content: center;
   font-weight: bold;
   line-height: 40px;
@@ -319,7 +326,7 @@ h2 {
 #contact-paragraph {
   font-family: Poppins, sans-serif;
   font-size: large;
-  color: #fcfcfc;
+  color: black;
   justify-content: center;
   text-align: center;
   font-weight: normal;
@@ -329,7 +336,11 @@ h2 {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  gap: 20px;
+  gap: 5px;
+}
+
+.contact-form label {
+  color: transparent;
 }
 
 .form-field {
@@ -343,16 +354,17 @@ h2 {
   justify-content: start;
   width: 120px;
   padding: 10px;
+  margin-top: 10px;
   border: 1px solid white;
   border-radius: 5px;
   font-family: Poppins, sans-serif;
-  color: #4472e7;
+  color: #384af5;
 }
 
 #contact-btn:hover {
   color: white;
-  background-color: #4472e7;
-  border: 1px solid #4472e7;
+  background-color: #384af5;
+  border: 1px solid #384af5;
 }
 
 .contact-message {

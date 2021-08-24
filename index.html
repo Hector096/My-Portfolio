@@ -225,12 +225,12 @@
                     need built or a project that needs coding. I’d love to help with it</p>
             </div>
             <form action="https://formspree.io/f/mnqlovzq" method="POST" class="contact-form">
-                <label></label>
-                <input  type="text" name="_name" placeholder="Name" class="form-field" required>
-                <label></label>
-                <input type="email" name="_replyto" placeholder="Email" class="form-field" required>
-                <label></label>
-                <textarea name="_message" placeholder="Write your message here" maxlength="500"
+                <label for="input-name"> </label>
+                <input  type="text" id="input-name" name="_name" placeholder="Name" class="form-field" required>
+                <label for="input-email"> </label>
+                <input type="email" name="_replyto" id="input-email" placeholder="Email" class="form-field" required>
+                <label for="input-msg"> </label>
+                <textarea name="_message" id="input-msg" placeholder="Write your message here" maxlength="500"
                     class="form-field contact-message" required></textarea>
                 <button type="submit" id="contact-btn">Get in touch</button>
             </form>

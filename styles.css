@@ -221,14 +221,14 @@ h2 {
 
 .work-text {
   font-family: Poppins, sans-serif;
-  color: #7f8081;
+  color: #344563;
   font-weight: bold;
 }
 
 .canopy {
   font-family: Poppins, sans-serif;
   font-weight: bold;
-  color: #344563;
+  color: black;
 }
 
 .vector-img {
@@ -306,7 +306,7 @@ h2 {
 }
 
 #contact-card-title {
-  color: #fcfcfc;
+  color: white;
   justify-content: center;
   font-weight: bold;
   line-height: 40px;
@@ -319,7 +319,7 @@ h2 {
 #contact-paragraph {
   font-family: Poppins, sans-serif;
   font-size: large;
-  color: #fcfcfc;
+  color: white;
   justify-content: center;
   text-align: center;
   font-weight: normal;
@@ -329,7 +329,7 @@ h2 {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  gap: 20px;
+  gap: 15px;
 }
 
 .form-field {
@@ -343,6 +343,7 @@ h2 {
   justify-content: start;
   width: 120px;
   padding: 10px;
+  margin-top: 10px;
   border: 1px solid white;
   border-radius: 5px;
   font-family: Poppins, sans-serif;

@@ -202,6 +202,13 @@ h2 {
   margin-right: 20px;
 }
 
+#projects h2 {
+  color: #384af5;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  font-size: 50px;
+}
+
 .project-button {
   border: 2px solid #384af5;
   padding: 8px;
@@ -306,7 +313,7 @@ h2 {
 }
 
 #contact-card-title {
-  color: white;
+  color: black;
   justify-content: center;
   font-weight: bold;
   line-height: 40px;
@@ -319,7 +326,7 @@ h2 {
 #contact-paragraph {
   font-family: Poppins, sans-serif;
   font-size: large;
-  color: white;
+  color: black;
   justify-content: center;
   text-align: center;
   font-weight: normal;

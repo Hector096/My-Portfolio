@@ -306,7 +306,7 @@ h2 {
 }
 
 #contact-card-title {
-  color: white;
+  color: black;
   justify-content: center;
   font-weight: bold;
   line-height: 40px;
@@ -319,7 +319,7 @@ h2 {
 #contact-paragraph {
   font-family: Poppins, sans-serif;
   font-size: large;
-  color: white;
+  color: black;
   justify-content: center;
   text-align: center;
   font-weight: normal;

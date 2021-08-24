@@ -80,11 +80,11 @@ h2 {
   margin-top: 20px;
   font-size: large;
   line-height: 24px;
-  color: #7f8cff;
+  color: #384af5;
 }
 
 .logo {
-  color: #7f8cff;
+  color: #384af5;
   font-size: x-large;
   font-family: Poppins, sans-serif;
   font-weight: 600;
@@ -94,7 +94,7 @@ h2 {
 }
 
 .menu {
-  color: #7f8cff;
+  color: #384af5;
   padding-top: 10px;
 }
 
@@ -203,9 +203,9 @@ h2 {
 }
 
 .project-button {
-  border: 2px solid #4472e7;
+  border: 2px solid #384af5;
   padding: 8px;
-  color: #4472e7;
+  color: #384af5;
   text-decoration: none;
   border-radius: 8px;
   font-size: large;
@@ -216,7 +216,7 @@ h2 {
 
 .project-button:hover {
   color: white;
-  background-color: #4472e7;
+  background-color: #384af5;
 }
 
 .work-text {
@@ -346,13 +346,13 @@ h2 {
   border: 1px solid white;
   border-radius: 5px;
   font-family: Poppins, sans-serif;
-  color: #4472e7;
+  color: #384af5;
 }
 
 #contact-btn:hover {
   color: white;
-  background-color: #4472e7;
-  border: 1px solid #4472e7;
+  background-color: #384af5;
+  border: 1px solid #384af5;
 }
 
 .contact-message {

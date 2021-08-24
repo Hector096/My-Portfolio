@@ -329,7 +329,11 @@ h2 {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  gap: 15px;
+  gap: 5px;
+}
+
+.contact-form label {
+  color: transparent;
 }
 
 .form-field {

@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* outline: 1px solid red; */
 }
 
 .intro-section {
@@ -109,7 +108,7 @@ h2 {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: transparent;
   display: none;
   top: -100vh;
@@ -117,6 +116,8 @@ h2 {
   padding-left: 4rem;
   padding-top: 2rem;
   transition: 1s;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 #menu2 {
@@ -353,7 +354,7 @@ h2 {
 }
 
 #contact-card-title {
-  color: black;
+  color: white;
   justify-content: center;
   font-weight: bold;
   line-height: 40px;
@@ -366,7 +367,7 @@ h2 {
 #contact-paragraph {
   font-family: Poppins, sans-serif;
   font-size: large;
-  color: black;
+  color: white;
   justify-content: center;
   text-align: center;
   font-weight: normal;
@@ -399,6 +400,7 @@ h2 {
   border-radius: 5px;
   font-family: Poppins, sans-serif;
   color: #384af5;
+  transition: background-color 1s, transform 1s;
 }
 
 #contact-btn:hover {
@@ -428,6 +430,7 @@ h2 {
     padding-top: 40px;
     width: 50%;
   }
+
   #menu2 {
     display: flex;
     visibility: visible;

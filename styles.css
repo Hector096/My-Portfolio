@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* outline: 1px solid red; */
 }
 
 .intro-section {
@@ -29,11 +30,17 @@ h1 span {
 }
 
 header {
+  width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 80vw;
+  display: flex;
+  padding-top: 2rem;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
+  align-items: flex-end;
 }
 
 h1 {
@@ -95,11 +102,44 @@ h2 {
 
 .menu {
   color: #384af5;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.menu1 {
+.mobile-menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.9;
+  background-color: transparent;
   display: none;
+  top: -100vh;
+  left: 0;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  transition: 1s;
+}
+
+#menu2 {
+  display: none;
+  visibility: hidden;
+}
+
+#close-toggle {
+  width: 25px;
+  position: absolute;
+  right: 6em;
+  cursor: pointer;
+}
+
+.mobile-menu ul li {
+  margin: 35px 0;
+  list-style: none;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
 }
 
 .social {
@@ -206,7 +246,7 @@ h2 {
   color: #384af5;
   font-weight: bold;
   font-family: Poppins, sans-serif;
-  font-size: 50px;
+  font-size: 2.5em;
 }
 
 .project-button {
@@ -377,35 +417,6 @@ h2 {
     height: 80vh;
   }
 
-  .menu1 {
-    visibility: visible;
-    display: flex;
-  }
-
-  .menu1 ul {
-    display: flex;
-  }
-
-  .menu1 li {
-    list-style: none;
-    padding: 10px;
-    text-decoration: none;
-  }
-
-  .menu1 li a {
-    text-decoration: none;
-    color: #344563;
-    font-size: 1.2em;
-  }
-
-  .menu1 li a:hover {
-    color: #4472e7;
-  }
-
-  .menu {
-    display: none;
-  }
-
   .contact-section {
     background-image: url("images/contact-desktop-background.png");
     background-size: cover;
@@ -416,6 +427,45 @@ h2 {
   .languages-box2 {
     padding-top: 40px;
     width: 50%;
+  }
+  #menu2 {
+    display: flex;
+    visibility: visible;
+    justify-content: space-between;
+  }
+
+  .nav-container {
+    width: 90vw;
+  }
+
+  #menu2 ul {
+    display: flex;
+  }
+
+  #menu2 li {
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  #menu2 li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 1.2em;
+  }
+
+  #menu2 li a:hover {
+    color: #4472e7;
+  }
+
+  .menu {
+    visibility: hidden;
+    display: none;
+  }
+
+  .mobile-menu {
+    visibility: hidden;
+    display: none;
   }
 
   .language {
@@ -444,15 +494,6 @@ h2 {
     justify-content: space-around;
     flex-direction: row;
     padding: 50px;
-  }
-
-  header {
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-  .menu {
-    visibility: hidden;
   }
 
   .contact-section {

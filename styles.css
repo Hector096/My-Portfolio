@@ -399,6 +399,7 @@ h2 {
   border-radius: 5px;
   font-family: Poppins, sans-serif;
   color: #384af5;
+  transition: background-color 1s, transform 1s;
 }
 
 #contact-btn:hover {

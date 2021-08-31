@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* outline: 1px solid red; */
 }
 
 .intro-section {
@@ -429,6 +428,7 @@ h2 {
     padding-top: 40px;
     width: 50%;
   }
+
   #menu2 {
     display: flex;
     visibility: visible;

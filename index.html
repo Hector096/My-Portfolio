@@ -14,22 +14,31 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-Y9G0FXHEWL');
     </script>
 </head>
 
 <body>
     <header>
-        <a class="logo" href="#">My Logo</a>
-        <nav class="menu"><a href="#"><img src="images/Union.png" alt="menu"></a></nav>
-        <nav class="menu1">
-            <ul>
-                <li><a href="#projects">Portfolio</a> </li>
-                <li><a href="#about-myself">About</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a class="logo" href="#">My Logo</a>
+            <nav class="menu"><img src="images/Union.png" id="open-menu" alt="menu" onclick="openMenu();"></nav>
+            <nav class="mobile-menu" id="menu1">
+                <img src="images/close.png" alt="close" id="close-toggle" onclick="closeMenu();">
+                <ul>
+                    <li><a href="#projects" onclick="closeMenu();">Portfolio</a> </li>
+                    <li><a href="#about-myself" onclick="closeMenu();">About</a></li>
+                    <li><a href="#contact-me" onclick="closeMenu();">Contact</a></li>
+                </ul>
+            </nav>
+            <nav id="menu2">
+                <ul>
+                    <li><a href="#projects" >Portfolio</a> </li>
+                    <li><a href="#about-myself" >About</a></li>
+                    <li><a href="#contact-me" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="work-container">
         <section class="intro-section">
@@ -50,8 +59,10 @@
             </div>
 
         </section>
-        <section id="projects"> <h2>My Projects</h2></section>
-        <section class="work-item" >
+        <section id="projects">
+            <h2>My Projects</h2>
+        </section>
+        <section class="work-item">
             <div class="work-box">
                 <div class="card-image">
                     <img class="work-snapshot" src="images/SnapshotPortfolio.png" alt="snapshot">
@@ -226,7 +237,7 @@
             </div>
             <form action="https://formspree.io/f/mnqlovzq" method="POST" class="contact-form">
                 <label for="input-name">.</label>
-                <input  type="text" id="input-name" name="_name" placeholder="Name" class="form-field" required>
+                <input type="text" id="input-name" name="_name" placeholder="Name" class="form-field" required>
                 <label for="input-email">.</label>
                 <input type="email" name="_replyto" id="input-email" placeholder="Email" class="form-field" required>
                 <label for="input-msg">.</label>
@@ -237,6 +248,9 @@
         </section>
 
     </section>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
 
 </body>
 

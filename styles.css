@@ -117,7 +117,7 @@ h2 {
   font-weight: 400;
 }
 
-.popUp-view {
+#popUp-view {
   z-index: 3;
   background-color: #958ef549;  
   backdrop-filter: blur(5px);
@@ -129,8 +129,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .popUp-card {
@@ -262,6 +261,7 @@ h2 {
 
 .popUp-card .card-image .work-snapshot {
   align-self: center;
+  object-fit: cover;
 }
 
 .popUp-card .work .work-detail-box {
@@ -273,11 +273,12 @@ h2 {
   font-size: small;
   padding: 8px;
 }
-
+.popUp-card .work-description {
+  font-size: small;
+}
 .card-title {
   color: #344563;
   font-weight: bold;
-  /* line-height: 40px; */
   font-size: xx-large;
 }
 
@@ -332,6 +333,7 @@ h2 {
   color: #384af5;
   text-decoration: none;
   border-radius: 8px;
+  cursor: pointer;
   font-size: large;
   font-weight: bold;
   transition: background-color 1s, transform 1s;
@@ -499,6 +501,10 @@ h2 {
     width: 50%;
   }
 
+  .popUp-card .work-description {
+    font-size: medium;
+  }
+
   #menu2 {
     display: flex;
     visibility: visible;
@@ -607,6 +613,10 @@ h2 {
     flex-direction: row;
   }
 
+  .popUp-card .work-description {
+    font-size: medium;
+  }
+
   .box1 {
     flex-direction: row-reverse;
   }
@@ -639,7 +649,7 @@ h2 {
   }
   .popUp-card .work-description {
     width: 60vw;
-    font-size: medium;
+    font-size: x-large;
     overflow: hidden;
     text-overflow: ellipsis;
   }

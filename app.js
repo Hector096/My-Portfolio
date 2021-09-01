@@ -1,5 +1,6 @@
 const menu = document.getElementById('menu1');
 const workPopUpCard = document.getElementById('work-popup-section');
+const subscribeForm = document.getElementById('subscribe');
 
 // eslint-disable-next-line no-unused-vars
 function closeMenu() {
@@ -16,10 +17,10 @@ function openMenu() {
 }
 
 var myProjects = [
-    { 'name': 'Tonic', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio.png' },
-    { 'name': 'Multi Project', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio2.png' },
-    { 'name': 'Tonic', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio3.png' },
-    { 'name': 'Multi Project', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio4.png' }
+    { 'name': 'Tonic', 'detailDescription':'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio.png' },
+    { 'name': 'Multi Project', 'detailDescription':'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio2.png' },
+    { 'name': 'Tonic', 'detailDescription':'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio3.png' },
+    { 'name': 'Multi Project', 'detailDescription':'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio4.png' }
 ];
 
 myProjectWork(myProjects);
@@ -55,7 +56,7 @@ function myProjectWork(data) {
                             </ul>
                         </div>
                     </div>
-                    <div class="work-button"><a class="project-button" onclick="popUpProject(${data[i]});">See Project</a></div>
+                    <div class="work-button"><a class="project-button see-button">See Project</a></div>
                 </div>
             </div>
         </section>
@@ -87,7 +88,7 @@ function myProjectWork(data) {
                             </ul>
                         </div>
                     </div>
-                    <div class="work-button"><button class="project-button" onclick="popUpProject(${data[i]});">See Project</button></div>
+                    <div class="work-button"><a class="project-button see-button">See Project</a></div>
                 </div>
             </div>
         </section>
@@ -98,11 +99,16 @@ function myProjectWork(data) {
 
 
     }
+    const btn = workCard.querySelectorAll('.see-button');
+    btn.forEach((x, idx) => x.addEventListener('click', () => {
+        popUpProject(data[idx]);
+    }))
+
 
 }
 
-function popUpProject(popUpdata){
-   var popUpItem = `<div class="popUp-view" id= "work-popUp">
+function popUpProject(popUpdata) {
+    var popUpItem = `<div id="popUp-view">
    <div class="popUp-card">
        <img src="images/close.png" alt="close" id="popUp-Close" onclick="popupClose();">
        <h2 class="card-title">${popUpdata.name}</h2>
@@ -118,7 +124,7 @@ function popUpProject(popUpdata){
                alt="snapshot">
        </div>
        <div class="work">
-           <p class="work-description">${popUpdata.description}</p>
+           <p class="work-description">${popUpdata.detailDescription}</p>
            <div>
                <div class="work-detail-box">
                    <ul>
@@ -140,11 +146,11 @@ function popUpProject(popUpdata){
        </div>
    </div>
 </div>`
-
-workPopUpCard.innerHTML += popUpItem;
+    workPopUpCard.innerHTML = popUpItem;
 }
 
-function openPopUp(){
-const popUpProject = document.getElementById('work-popUp');
-popUpProject.style.visibility = visible;
+function popupClose() {
+    const popUpProject = document.getElementById('popUp-view');
+    popUpProject.style.visibility = "hidden";
 }
+

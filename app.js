@@ -19,7 +19,7 @@ const myProjects = [
   },
 ];
 
-function checkFormInput() {
+const checkFormInput = () => {
   const email = formEmail.value.trim();
   if (email === email.toLowerCase()) {
     formErrorMessage.style.display = 'none';
@@ -28,7 +28,7 @@ function checkFormInput() {
     formErrorMessage.innerText = 'Email Should be in lowercase.';
     formErrorMessage.style.display = 'inline';
   }
-}
+};
 
 subscribeForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -36,20 +36,20 @@ subscribeForm.addEventListener('submit', (e) => {
 });
 
 // eslint-disable-next-line no-unused-vars
-function closeMenu() {
+const closeMenu = () => {
   menu.style.top = '-100vh';
   menu.style.backgroundColor = 'transparent';
   menu.style.display = 'none';
-}
+};
 
 // eslint-disable-next-line no-unused-vars
-function openMenu() {
+const openMenu = () => {
   menu.style.top = '0';
   menu.style.backgroundColor = '#384af5';
   menu.style.display = 'block';
-}
+};
 
-function popUpProject(popUpdata) {
+const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
      <div class="popUp-card">
          <img src="images/close.png" alt="close" id="popUp-Close" onclick="popupClose();">
@@ -89,15 +89,15 @@ function popUpProject(popUpdata) {
      </div>
   </div>`;
   workPopUpCard.innerHTML = popUpItem;
-}
+};
 
 // eslint-disable-next-line no-unused-vars
-function popupClose() {
+const popupClose = () => {
   const popUpProject = document.getElementById('popUp-view');
   popUpProject.style.visibility = 'hidden';
-}
+};
 
-function myProjectWork(data) {
+const myProjectWork = (data) => {
   const workCard = document.getElementById('work-section');
   let workItem;
   for (let i = 0; i < data.length; i += 1) {
@@ -171,6 +171,6 @@ function myProjectWork(data) {
   btn.forEach((x, idx) => x.addEventListener('click', () => {
     popUpProject(data[idx]);
   }));
-}
+};
 
 myProjectWork(myProjects);

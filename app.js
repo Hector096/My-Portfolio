@@ -1,5 +1,8 @@
 const menu = document.getElementById('menu1');
 const workPopUpCard = document.getElementById('work-popup-section');
+const subscribeForm = document.getElementById('subscribe');
+const formErrorMessage = document.getElementById('error-message');
+const formEmail = document.getElementById('input-email');
 
 const myProjects = [
   {
@@ -16,11 +19,6 @@ const myProjects = [
   },
 ];
 
-subscribeForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  checkFormInput();
-});
-
 function checkFormInput() {
   const email = formEmail.value.trim();
   if (email === email.toLowerCase()) {
@@ -31,6 +29,11 @@ function checkFormInput() {
     formErrorMessage.style.display = 'inline';
   }
 }
+
+subscribeForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkFormInput();
+});
 
 // eslint-disable-next-line no-unused-vars
 function closeMenu() {

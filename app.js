@@ -16,6 +16,22 @@ const myProjects = [
   },
 ];
 
+subscribeForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkFormInput();
+});
+
+function checkFormInput() {
+  const email = formEmail.value.trim();
+  if (email === email.toLowerCase()) {
+    formErrorMessage.style.display = 'none';
+    subscribeForm.submit();
+  } else {
+    formErrorMessage.innerText = 'Email Should be in lowercase.';
+    formErrorMessage.style.display = 'inline';
+  }
+}
+
 // eslint-disable-next-line no-unused-vars
 function closeMenu() {
   menu.style.top = '-100vh';

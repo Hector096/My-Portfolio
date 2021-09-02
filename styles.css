@@ -258,7 +258,7 @@ h2 {
   width: 100%;
 }
 
-.work-snapshot:hover {
+.popUp-card .card-image .work-snapshot:hover {
   transition: transform 1s;
   transform: scale(0.7);
 }

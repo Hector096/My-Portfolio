@@ -3,32 +3,37 @@ const workPopUpCard = document.getElementById('work-popup-section');
 const subscribeForm = document.getElementById('subscribe');
 const formErrorMessage = document.getElementById('error-message');
 const formEmail = document.getElementById('input-email');
+const formName = document.getElementById('input-name');
+const formMsg = document.getElementById('input-msg');
 
 const myProjects = [
   {
-    name: 'Tonic', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors.096', liveDemoLink: 'https://www.github.com/Hectors.096', imgUrl: 'images/SnapshotPortfolio.png',
+    name: 'Tonic', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors096', liveDemoLink: 'https://hector096.github.io/My-Portfolio/', imgUrl: 'images/SnapshotPortfolio.png',
   },
   {
-    name: 'Multi Project', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors.096', liveDemoLink: 'https://www.github.com/Hectors.096', imgUrl: 'images/SnapshotPortfolio2.png',
+    name: 'Multi Project', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors096', liveDemoLink: 'https://hector096.github.io/My-Portfolio/', imgUrl: 'images/SnapshotPortfolio2.png',
   },
   {
-    name: 'Tonic', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors.096', liveDemoLink: 'https://www.github.com/Hectors.096', imgUrl: 'images/SnapshotPortfolio3.png',
+    name: 'Tonic', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors096', liveDemoLink: 'https://hector096.github.io/My-Portfolio/', imgUrl: 'images/SnapshotPortfolio3.png',
   },
   {
-    name: 'Multi Project', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors.096', liveDemoLink: 'https://www.github.com/Hectors.096', imgUrl: 'images/SnapshotPortfolio4.png',
+    name: 'Multi Project', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://www.github.com/Hectors096', liveDemoLink: 'https://hector096.github.io/My-Portfolio/', imgUrl: 'images/SnapshotPortfolio4.png',
   },
 ];
 
-function checkFormInput() {
+const checkFormInput = () => {
   const email = formEmail.value.trim();
   if (email === email.toLowerCase()) {
     formErrorMessage.style.display = 'none';
     subscribeForm.submit();
+    subscribeForm.reset();
+    localStorage.removeItem('formData');
+    subscribeForm.reset();
   } else {
     formErrorMessage.innerText = 'Email Should be in lowercase.';
     formErrorMessage.style.display = 'inline';
   }
-}
+};
 
 subscribeForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -36,20 +41,48 @@ subscribeForm.addEventListener('submit', (e) => {
 });
 
 // eslint-disable-next-line no-unused-vars
-function closeMenu() {
+const closeMenu = () => {
   menu.style.top = '-100vh';
   menu.style.backgroundColor = 'transparent';
   menu.style.display = 'none';
-}
+};
 
 // eslint-disable-next-line no-unused-vars
-function openMenu() {
+const openMenu = () => {
   menu.style.top = '0';
   menu.style.backgroundColor = '#384af5';
   menu.style.display = 'block';
-}
+};
+// eslint-disable-next-line no-unused-vars
+const persistFormData = () => {
+  const name = formName.value.trim();
+  const email = formEmail.value.trim();
+  const msg = formMsg.value.trim();
+  const formData = {
+    name,
+    email,
+    msg,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
 
-function popUpProject(popUpdata) {
+const checkLocalFormData = () => {
+  let localFormData = localStorage.getItem('formData');
+  localFormData = JSON.parse(localFormData);
+  if (localFormData != null) {
+    if (localFormData.name != null) {
+      formName.value = localFormData.name;
+    }
+    if (localFormData.name != null) {
+      formEmail.value = localFormData.email;
+    }
+    if (localFormData.name != null) {
+      formMsg.value = localFormData.msg;
+    }
+  }
+};
+
+const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
      <div class="popUp-card">
          <img src="images/close.png" alt="close" id="popUp-Close" onclick="popupClose();">
@@ -89,15 +122,15 @@ function popUpProject(popUpdata) {
      </div>
   </div>`;
   workPopUpCard.innerHTML = popUpItem;
-}
+};
 
 // eslint-disable-next-line no-unused-vars
-function popupClose() {
+const popupClose = () => {
   const popUpProject = document.getElementById('popUp-view');
   popUpProject.style.visibility = 'hidden';
-}
+};
 
-function myProjectWork(data) {
+const myProjectWork = (data) => {
   const workCard = document.getElementById('work-section');
   let workItem;
   for (let i = 0; i < data.length; i += 1) {
@@ -171,6 +204,7 @@ function myProjectWork(data) {
   btn.forEach((x, idx) => x.addEventListener('click', () => {
     popUpProject(data[idx]);
   }));
-}
+};
 
 myProjectWork(myProjects);
+checkLocalFormData();

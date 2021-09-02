@@ -295,11 +295,6 @@ h2 {
   object-fit: cover;
 }
 
-.popUp-card .card-image .work-snapshot:hover {
-  transition: transform 1s;
-  transform: scale(0.7);
-}
-
 .popUp-card .work .work-detail-box {
   margin-top: 15px;
   margin-bottom: 40px;

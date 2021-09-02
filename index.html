@@ -17,7 +17,6 @@
         gtag('config', 'G-Y9G0FXHEWL');
     </script>
 </head>
-
 <body>
     <header>
         <div class="nav-container">
@@ -33,9 +32,9 @@
             </nav>
             <nav id="menu2">
                 <ul>
-                    <li><a href="#projects" >Portfolio</a> </li>
-                    <li><a href="#about-myself" >About</a></li>
-                    <li><a href="#contact-me" >Contact</a></li>
+                    <li><a href="#projects">Portfolio</a> </li>
+                    <li><a href="#about-myself">About</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -62,127 +61,11 @@
         <section id="projects">
             <h2>My Projects</h2>
         </section>
-        <section class="work-item">
-            <div class="work-box">
-                <div class="card-image">
-                    <img class="work-snapshot" src="images/SnapshotPortfolio.png" alt="snapshot">
-                </div>
-                <div class="work">
-                    <h2 class="card-title">Tonic</h2>
-                    <div class="work-detail-box">
-                        <ul>
-                            <li class=" work-detail canopy">CANOPY </li>
-                            <li class="work-detail work-text">Back End Dev </li>
-                            <li class="work-detail work-text">2015</li>
-                        </ul>
-                    </div>
-                    <p class="work-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                    <div>
-                        <div class="work-detail-box">
-                            <ul>
-                                <li class="chips">html</li>
-                                <li class="chips">css</li>
-                                <li class="chips">javascript</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="work-button"><a class="project-button" href="#">See Project</a></div>
-                </div>
-            </div>
+        <section id="work-section">
         </section>
-        <section class="work-item">
-            <div class="work-box box1">
-                <div class="card-image">
-                    <img class="work-snapshot" src="images/Snapshotportfolio4.png" alt="snapshot2">
-                </div>
-                <div class="work">
-                    <h2 class="card-title">Multi-Post <br>Stories</h2>
-                    <div class="work-detail-box">
-                        <ul>
-                            <li class=" work-detail canopy">CANOPY </li>
-                            <li class="work-detail work-text">Back End Dev </li>
-                            <li class="work-detail work-text">2015</li>
-                        </ul>
-                    </div>
-                    <p class="work-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                    <div>
-                        <div class="work-detail-box">
-                            <ul>
-                                <li class="chips">html</li>
-                                <li class="chips">css</li>
-                                <li class="chips">javascript</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="work-button"><a class="project-button" href="#">See Project</a></div>
-                </div>
-            </div>
+        <section id="work-popup-section">
         </section>
-        <section class="work-item">
-            <div class="work-box">
-                <div class="card-image">
-                    <img class="work-snapshot" src="images/SnapshotPortfolio2.png" alt="snapshot3">
-                </div>
-                <div class="work">
-                    <h2 class="card-title">Tonic</h2>
-                    <div class="work-detail-box">
-                        <ul>
-                            <li class=" work-detail canopy">CANOPY </li>
-                            <li class="work-detail work-text">Back End Dev </li>
-                            <li class="work-detail work-text">2015</li>
-                        </ul>
-                    </div>
-                    <p class="work-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                    <div>
-                        <div class="work-detail-box">
-                            <ul>
-                                <li class="chips">html</li>
-                                <li class="chips">css</li>
-                                <li class="chips">javascript</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="work-button"><a class="project-button" href="#">See Project</a></div>
-                </div>
-            </div>
-        </section>
-        <section class="work-item">
-            <div class="work-box box1">
-                <div class="card-image">
-                    <img class="work-snapshot" src="images/SnapshotPortfolio3.png" alt="snapshot4">
-                </div>
-                <div class="work">
-                    <h2 class="card-title">Multi-Post <br> Stories</h2>
-                    <div class="work-detail-box">
-                        <ul>
-                            <li class=" work-detail canopy">CANOPY </li>
-                            <li class="work-detail work-text">Back End Dev </li>
-                            <li class="work-detail work-text">2015</li>
-                        </ul>
-                    </div>
-                    <p class="work-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                    <div>
-                        <div class="work-detail-box">
-                            <ul>
-                                <li class="chips">html</li>
-                                <li class="chips">css</li>
-                                <li class="chips">javascript</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="work-button"><a class="project-button" href="#">See Project</a></div>
-                </div>
-            </div>
-        </section>
-
+        
         <section class="about-section" id="about-myself">
             <div class="about">
                 <h2 class="card-title">About <br>Myself</h2>
@@ -235,7 +118,7 @@
                     you
                     need built or a project that needs coding. I’d love to help with it</p>
             </div>
-            <form action="https://formspree.io/f/mnqlovzq" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/mnqlovzq" method="POST" class="contact-form" id="subscribe">
                 <label for="input-name">.</label>
                 <input type="text" id="input-name" name="_name" placeholder="Name" class="form-field" required>
                 <label for="input-email">.</label>
@@ -243,12 +126,15 @@
                 <label for="input-msg">.</label>
                 <textarea name="_message" id="input-msg" placeholder="Write your message here" maxlength="500"
                     class="form-field contact-message" required></textarea>
-                <button type="submit" id="contact-btn">Get in touch</button>
+                    <div id="form-button">
+                        <button type="submit" id="contact-btn">Get in touch</button>
+                <small id="error-message"></small>
+                    </div>
             </form>
         </section>
 
     </section>
-    
+
     <!-- Custom JS -->
     <script src="app.js"></script>
 

@@ -26,7 +26,9 @@ const checkFormInput = () => {
   if (email === email.toLowerCase()) {
     formErrorMessage.style.display = 'none';
     subscribeForm.submit();
-    localStorage.removeItem("formData");
+    subscribeForm.reset();
+    localStorage.removeItem('formData');
+    subscribeForm.reset();
   } else {
     formErrorMessage.innerText = 'Email Should be in lowercase.';
     formErrorMessage.style.display = 'inline';
@@ -51,37 +53,34 @@ const openMenu = () => {
   menu.style.backgroundColor = '#384af5';
   menu.style.display = 'block';
 };
-
+// eslint-disable-next-line no-unused-vars
 const persistFormData = () => {
-   let name = formName.value.trim();
-   let email = formEmail.value.trim();
-   let msg = formMsg.value.trim();
-   let formData = {
-     name : name,
-     email : email,
-     msg : msg
-   }
-   localStorage.setItem('formData', JSON.stringify(formData));
-}
+  const name = formName.value.trim();
+  const email = formEmail.value.trim();
+  const msg = formMsg.value.trim();
+  const formData = {
+    name,
+    email,
+    msg,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
 
 const checkLocalFormData = () => {
-  let localFormData = localStorage.getItem("formData");
-   localFormData = JSON.parse(localFormData);
-   if( localFormData === null){
-    console.log("NULL IN LOCAL STORAGE")
-   } else {
-     if(localFormData.name != null){
+  let localFormData = localStorage.getItem('formData');
+  localFormData = JSON.parse(localFormData);
+  if (localFormData != null) {
+    if (localFormData.name != null) {
       formName.value = localFormData.name;
-     }
-     if(localFormData.name != null){
+    }
+    if (localFormData.name != null) {
       formEmail.value = localFormData.email;
-     }
-     if(localFormData.name != null){
+    }
+    if (localFormData.name != null) {
       formMsg.value = localFormData.msg;
-     }     
-   }
-
-}
+    }
+  }
+};
 
 const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">

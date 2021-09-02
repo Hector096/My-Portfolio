@@ -258,11 +258,6 @@ h2 {
   width: 100%;
 }
 
-.work-snapshot:hover {
-  transition: transform 1s;
-  transform: scale(0.7);
-}
-
 .popUp-card .card-image {
   margin-top: 5px;
   height: 20rem;
@@ -298,6 +293,11 @@ h2 {
 .popUp-card .card-image .work-snapshot {
   align-self: center;
   object-fit: cover;
+}
+
+.popUp-card .card-image .work-snapshot:hover {
+  transition: transform 1s;
+  transform: scale(0.7);
 }
 
 .popUp-card .work .work-detail-box {

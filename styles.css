@@ -428,13 +428,6 @@ h2 {
   border-top-left-radius: 110px;
 }
 
-#error-message {
-  padding-top: 20px;
-  margin-left: 10px;
-  display: none;
-  color: red;
-}
-
 #contact-card-title {
   color: white;
   justify-content: center;
@@ -585,18 +578,6 @@ h2 {
     width: 100vw;
     background-image: url("images/contact-desktop-background.png");
     background-size: cover;
-  }
-
-  #form-button {
-    display: flex;
-    justify-content: center;
-  }
-
-  #error-message {
-    padding-top: 20px;
-    margin-left: 10px;
-    display: none;
-    color: red;
   }
 
   .contact {

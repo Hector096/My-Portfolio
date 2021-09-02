@@ -1,27 +1,26 @@
 const menu = document.getElementById('menu1');
 const workPopUpCard = document.getElementById('work-popup-section');
-const subscribeForm = document.getElementById('subscribe');
+
+const myProjects = [
+  { 'name': 'Tonic', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio.png' },
+  { 'name': 'Multi Project', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio2.png' },
+  { 'name': 'Tonic', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio3.png' },
+  { 'name': 'Multi Project', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio4.png' }
+];
 
 // eslint-disable-next-line no-unused-vars
 function closeMenu() {
-    menu.style.top = '-100vh';
-    menu.style.backgroundColor = 'transparent';
-    menu.style.display = 'none';
+  menu.style.top = '-100vh';
+  menu.style.backgroundColor = 'transparent';
+  menu.style.display = 'none';
 }
 
 // eslint-disable-next-line no-unused-vars
 function openMenu() {
-    menu.style.top = '0';
-    menu.style.backgroundColor = '#384af5';
-    menu.style.display = 'block';
+  menu.style.top = '0';
+  menu.style.backgroundColor = '#384af5';
+  menu.style.display = 'block';
 }
-
-var myProjects = [
-    { 'name': 'Tonic', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio.png' },
-    { 'name': 'Multi Project', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio2.png' },
-    { 'name': 'Tonic', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio3.png' },
-    { 'name': 'Multi Project', 'detailDescription': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', 'description': 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 'stack': ['html', 'css', 'Javascript'], 'github': 'https://www.github.com/Hectors.096', 'liveDemoLink': 'https://www.github.com/Hectors.096', 'imgUrl': 'images/SnapshotPortfolio4.png' }
-];
 
 myProjectWork(myProjects);
 

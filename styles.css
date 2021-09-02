@@ -453,6 +453,13 @@ h2 {
   gap: 5px;
 }
 
+#error-message {
+  padding-top: 20px;
+  margin-left: 10px;
+  display: none;
+  color: red;
+}
+
 .contact-form label {
   color: transparent;
 }
@@ -597,6 +604,18 @@ h2 {
 
   #contact-btn {
     place-self: center;
+  }
+
+  #form-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  #error-message {
+    padding-top: 20px;
+    margin-left: 10px;
+    display: none;
+    color: red;
   }
 }
 

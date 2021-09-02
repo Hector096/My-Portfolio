@@ -120,12 +120,12 @@
             </div>
             <form action="https://formspree.io/f/mnqlovzq" method="POST" class="contact-form" id="subscribe">
                 <label for="input-name">.</label>
-                <input type="text" id="input-name" name="_name" placeholder="Name" class="form-field" required>
+                <input type="text" id="input-name" name="_name" placeholder="Name" class="form-field" required onchange="persistFormData();">
                 <label for="input-email">.</label>
-                <input type="email" name="_replyto" id="input-email" placeholder="Email" class="form-field" required>
+                <input type="email" name="_replyto" id="input-email" placeholder="Email" class="form-field" required onchange="persistFormData();">
                 <label for="input-msg">.</label>
                 <textarea name="_message" id="input-msg" placeholder="Write your message here" maxlength="500"
-                    class="form-field contact-message" required></textarea>
+                    class="form-field contact-message" required onchange="persistFormData();"></textarea>
                     <div id="form-button">
                         <button type="submit" id="contact-btn">Get in touch</button>
                 <small id="error-message"></small>

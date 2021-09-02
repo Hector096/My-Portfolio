@@ -5,7 +5,6 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: Poppins, sans-serif;
-  /* outline: 1px solid red; */
 }
 
 .intro-section {
@@ -119,7 +118,7 @@ h2 {
 
 #popUp-view {
   z-index: 3;
-  background-color: #958ef549;  
+  background-color: #958ef549;
   backdrop-filter: blur(5px);
   position: fixed;
   right: 0;
@@ -205,6 +204,35 @@ h2 {
   margin-bottom: 8rem;
 }
 
+.card-image {
+  width: 100%;
+}
+
+.work-button {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.work-detail-box {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.work-description {
+  color: #344563;
+}
+
+.chips {
+  background-color: #ebebff;
+  padding: 10px;
+  color: #384af5;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 20px;
+}
+
 .work-box {
   margin: 5px;
   padding: 5px;
@@ -220,7 +248,7 @@ h2 {
 
 .work-snapshot:hover {
   transition: transform 1s;
-  /* transform: scale(0.7); */
+  transform: scale(0.7);
 }
 
 .popUp-card .card-image {
@@ -232,7 +260,7 @@ h2 {
 }
 
 .popUp-card .work-button {
-  margin-left: 0px;
+  margin-left: 1px;
   margin-top: 20px;
 }
 
@@ -255,10 +283,6 @@ h2 {
   width: 15px;
 }
 
-.card-image {
-  width: 100%;
-}
-
 .popUp-card .card-image .work-snapshot {
   align-self: center;
   object-fit: cover;
@@ -276,16 +300,11 @@ h2 {
 .popUp-card .work-description {
   font-size: small;
 }
+
 .card-title {
   color: #344563;
   font-weight: bold;
   font-size: xx-large;
-}
-
-.work-button {
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 .work-detail {
@@ -300,25 +319,6 @@ h2 {
 
 .work-detail:last-child::after {
   content: none;
-}
-
-.work-detail-box {
-  margin-left: 30px;
-  margin-top: 20px;
-}
-
-.work-description {
-  color: #344563;
-}
-
-.chips {
-  background-color: #ebebff;
-  padding: 10px;
-  color: #384af5;
-  border-radius: 10px;
-  font-weight: bold;
-  display: inline-block;
-  margin-right: 20px;
 }
 
 #projects h2 {
@@ -647,6 +647,7 @@ h2 {
   .project-button {
     margin-left: 20px;
   }
+
   .popUp-card .work-description {
     width: 60vw;
     font-size: x-large;
